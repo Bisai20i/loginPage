@@ -1,0 +1,221 @@
+*{
+    padding:0;
+    margin: 0;
+    
+}
+#navBar{
+    background:linear-gradient(to bottom, #28B83F, rgb(175, 238, 199));
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 20px  #28B83F;
+    height: 7vh;
+}
+#navBar h2{
+    margin-left: 15px;
+    padding: 2px;
+    color: white;
+    cursor: none;
+}
+
+#navBar li{
+    list-style: none;
+    padding: 5px 10px 5px 10px;
+    margin: 0 5px 0 10px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 20px;
+    transition: .5s;
+}
+#navBar li a{
+    text-decoration: none;
+    color: white;
+    
+}
+#navBar li:hover{
+    box-shadow: 0 2px 10px  #28B83F;
+    cursor: pointer;
+}
+.main{
+    min-height: 100vh;
+    background: linear-gradient(to left top, #28B83F, white);
+    background-repeat: no-repeat;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+.logSign{
+    width: 350px;
+    height: 500px;
+    overflow: hidden;
+    background-color: transparent;
+    border-radius: 15px;
+    box-shadow: 5px 8px 15px #074e13 ;
+}
+
+#check {
+    display: none;
+}
+.signUp{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease-in-out;
+}
+.logSign label{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.logSign input{
+    width: 80%;
+    height: 25px;
+    display: flex;
+    background-color: rgb(236, 236, 236);
+    padding: 10px 15px 10px 15px;
+    margin: 15px auto;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+
+.logSign button{
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    text-align: center;
+    display: block;
+    color: white;
+    background-color: #28B83F;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px #074e13 ;
+}
+.logSign button:hover{
+    box-shadow: none;
+}
+.logIn{
+    width: 100%;
+    height: 460px;
+    background: white;
+    border-radius: 60% /10%;
+    transform: translateY(-145px);
+    transition: .8s ease-in-out;
+}
+.logIn label{
+    color: #28B83F;
+    padding-top: 15px;
+    transform: scale(.6);
+
+}
+#dob{
+    margin: 0;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    font-weight: normal;
+    cursor: none;
+}
+#dobInput{
+    width: auto;
+}
+#check:checked ~ .logIn{
+    transform: translateY(-500px);
+
+}
+#check:checked ~ .logIn label{
+    transform: scale(1);
+}
+#check:checked ~ .signUp label{
+    transform: translateY(-150px);
+}
+#check:checked ~ .signUp{
+    transform: scale(.6);
+}
+@media (max-width: 600px){
+    #navBar{
+        padding: 10px;
+        height: 5.5vh;
+    }
+    #navBar h2{
+        font-size: 16px;
+    }
+    #navBar li{
+        padding: 4px 8px 4px 8px;
+        margin: 0 5px 0 5px;
+
+    }
+    #navBar li a{
+        font-size: 14px;
+    }
+    .logSign{
+        width: 85%;
+        height: 420px;
+    }
+    .container{
+        padding: 20px 0;
+        min-height: 460px;
+    }
+    .logSign input{
+        width: 85%;
+        height: 20px;
+        padding: 5px 10px;
+        margin: 10px auto;
+    }
+    .logSign button{
+        width: 60%;
+        height: 30px;
+        margin: 15px auto;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        box-shadow: 0px 4px 15px #074e13 ;
+    }
+    #check:checked ~ .logIn{
+        transform: translateY(-420px);
+    
+    }
+    #check:checked ~ .logIn label{
+        transform: scale(1);
+    }
+    #check:checked ~ .signUp label{
+        transform: translateY(-150px);
+    }
+    #check:checked ~ .signUp{
+        transform: scale(.6);
+    }
+}
+@media (max-width: 410px){
+    #navBar{
+        height: 5vh;
+    }
+    #navBar h2{
+        margin-left: 5px;
+        font-size: 14px;
+        width: 100px;
+        text-shadow: #28B83F;
+    }
+    #navBar li{
+        padding: 3px 7px;
+
+        margin: 0 2px;
+    }
+    #navBar li a{
+        font-size: 10px;
+    }
+}
